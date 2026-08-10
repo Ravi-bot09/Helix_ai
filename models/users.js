@@ -6,7 +6,10 @@ status:{
     type:string,
     enum:['idel','working','done','failed'],
     default:true,
-}
+},
+message:{type:string,type:true},},
+{timestamps:true})
+module.exports=mongoose.model('incident',incidentschema);
 
 
 
@@ -14,4 +17,4 @@ status:{
 
 
 
-})
+
